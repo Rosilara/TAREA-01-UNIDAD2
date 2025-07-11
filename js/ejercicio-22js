@@ -1,0 +1,36 @@
+
+const array = [1, 2, 3, 4, 5, 6];
+
+let i = 0;
+while (i < array.length) {
+  console.log(array[i]);
+  i++;
+}
+
+for (let j = 0; j < array.length; j++) {
+  console.log(array[j]);
+}
+
+
+array.forEach(function (elemento) {
+  console.log(elemento);
+});
+
+
+for (let k = 0; k < array.length; k++) {
+  console.log(array[k] + 1);
+}
+
+const nuevoArray = array.map(function (elemento) {
+  return elemento + 1;
+});
+console.log(nuevoArray);
+
+
+let suma = 0;
+for (let l = 0; l < array.length; l++) {
+  suma += array[l];
+}
+const promedio = suma / array.length;
+console.log(promedio);
+
